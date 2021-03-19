@@ -1,0 +1,158 @@
+
+
+body {
+	margin: 0px;
+}
+
+#circle-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: lightblue;
+	width: 100vw;
+	height: 100vh;
+	position:relative;
+}
+
+.circle {
+	width: 50vh;
+	height: 50vh;
+	position: absolute;
+	border-radius: 50%;
+}
+
+#one:before {
+	content: "!CARPEDIEM!";
+}
+
+#one {
+	background-color: rgba(0,0,225, 0.45);
+	font-size: 40px;
+	font-family: "Oswald", sans-serif;
+	letter-spacing: 1.5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: bold;
+	transition: 1s;
+}
+
+#two {
+	background-color: green;
+	transition: 1s;
+	opacity: 0.5;
+}
+
+#three {
+	background-color: red;
+	transition: 1s;
+	opacity: 0.5;
+}
+
+#four {
+	background-color: orange;
+	transition: 1s;
+	opacity: 0.5;
+}
+#five {
+	background-color: green;
+	transition: 1s;
+	opacity: 0.5;
+}
+
+#cc {
+	position:relative;
+	width: 50vh;
+	height: 50vh;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+#cc:hover #two {
+	transform: translate(0px, 75px);
+}
+#cc:hover #three {
+	transform: translate(0px, -75px);
+}
+#cc:hover #four {
+	transform: translate(75px, 0px);
+}
+#cc:hover #five {
+	transform: translate(-75px, 0px);
+}
+
+#mb {
+	position: absolute;
+	font-family: "Oswald", sans-serif;
+	letter-spacing: 0.5px;
+	bottom: 0px;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	background-color: #3B3A6D;
+	color: white;
+}
+
+#mb a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0px;
+}
+
+#mb p {
+	padding: 5px;
+	margin: 0px;
+}
+#testbutton {
+    width: 150px;
+    height:50px;
+    border-radius:180px;
+    position:relative;
+    left:calc(50% - 75px);
+    top:calc(50% - 25px);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    cursor:pointer;
+    line-height:12px;
+  }
+  
+  #testbutton:before {
+    content:'';
+    z-index:1;
+    position:absolute;
+  
+    width:80%;
+    height:70%;
+    top:15%;
+    left:10%;
+    transition: 0.3s opacity ease-in-out;
+    filter:blur(15px);
+    opacity:0;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  }
+  
+  #testbutton:hover:before {
+    opacity:1;
+    transition: 0.3s opacity ease-in-out;
+    filter:blur(25px);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);  
+  }
+  
+  #testbutton:after {
+    content:'CLICK ME!';
+    text-align:center;
+    line-height:40px;
+    font-size:18px;
+    color:rgba(235,235,235,1);
+    font-weight:bold;
+    z-index:5;
+    position:absolute;
+  
+    border-radius:180px;
+    width:92%;
+    height:80%;
+    top:10%;
+    left:4%;  
+    background-color:rgb(19, 20, 22);
+  }

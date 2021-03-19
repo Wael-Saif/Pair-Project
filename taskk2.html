@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="task.js"> </script>
+  <link rel="stylesheet" href="task3.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>!CARPEDIEM!</title>
+  <h1>Task 1:</h1>
+  <h2 id="tr"> <img src="Capture 2.PNG"></h2>
+  <form>
+    <input type="text" name="word" class="question" id="nme" required autocomplete="off" />
+    <label for="nme"><span>Your Answer Here</span></label>
+    <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
+    <input type="text" id="wrd" name="word">
+  </form>
+  <div class="buttons">
+    <div class="container">
+      <button class="btn effect04" id="btn" data-sm-link-text="CHECK It" target="_blank">Let's</button>
+      <div id="pp" type="boolean"></div>
+    </div>
+</head>
+
+<body>
+  <script>
+    $('#btn').click(function () {
+      var $body = $('#pp');
+      $body.html('');
+      if ($('#nme').val() === 'Github') {
+
+        alert('TRUE')
+      } else {
+        alert('FALSE')
+      }
+    })
+  </script>
+</body>
+
+</html>
